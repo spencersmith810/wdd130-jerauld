@@ -6,7 +6,7 @@ Junior Developer 2 is responsible for building and maintaining the Gallery page 
 
 ### Wireframe
 
-![Gallery page wireframe](<../images/Screenshot 2026-11-18 at 4.06.57 PM.png>)
+![Gallery page wireframe](<Junior Developer 2.png>)
 
 ### Page responsibilities
 

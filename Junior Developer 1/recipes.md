@@ -6,7 +6,7 @@ Junior Developer 1 is responsible for building and maintaining the Recipes page 
 
 ### Wireframe
 
-![Recipes page wireframe](<../images/Screenshot 2026-11-18 at 4.06.51 PM.png>)
+![Recipes page wireframe](<Junior Developer 1.png>)
 
 ### Page responsibilities
 
