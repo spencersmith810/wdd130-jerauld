@@ -1,0 +1,276 @@
+/* Color palette */
+:root {
+    --cream: #f7efdf;
+    --gold: #e6b05d;
+    --rose: #b26562;
+    --brown: #4b2415;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--black);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--brown);
+}
+
+/* Accessibility */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 1rem;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.skip-link:focus {
+    left: 1rem;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 8%;
+    background-color: var(--white);
+    border-bottom: 4px solid var(--rose);
+}
+
+.logo {
+    width: 180px;
+}
+
+.site-navigation {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.site-navigation a {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: var(--rose);
+}
+
+/* Shared content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 4rem 8%;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--brown);
+    font-family: Georgia, serif;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+    margin: 1rem 0 0.75rem;
+    font-size: 1.5rem;
+}
+
+.eyebrow {
+    margin-bottom: 0.75rem;
+    color: var(--rose);
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.4rem;
+    border-radius: 999px;
+    background-color: var(--rose);
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--brown);
+}
+
+/* Hero section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    min-height: 500px;
+    background-color: var(--cream);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content p:not(.eyebrow) {
+    font-size: 1.15rem;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+/* Section headings */
+.section-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Recipe card */
+.recipe-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--white);
+    border: 3px solid var(--gold);
+    border-radius: 1rem;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+/* Explore cards */
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.explore-card {
+    padding: 1.5rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgb(75 36 21 / 15%);
+}
+
+.explore-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Sharing section */
+.sharing-section {
+    text-align: center;
+    background-color: var(--gold);
+}
+
+.sharing-section h2 {
+    color: var(--brown);
+}
+
+/* Footer */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 8%;
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.site-footer nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.site-footer a {
+    color: var(--white);
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .site-header,
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero,
+    .recipe-card,
+    .explore-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 3rem 6%;
+    }
+
+    .recipe-card {
+        padding: 1rem;
+    }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}

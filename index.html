@@ -3,9 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Corner</title>
-</head>
-<body>
 
+    <meta
+        name="description"
+        content="Cookie Corner is a place to discover homemade cookie recipes and browse delicious cookie photos."
+    >
+
+    <title>Cookie Corner | Homemade Cookie Recipes</title>
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+        <a href="index.html" class="logo-link">
+            <img
+                src="images/cookie-corner-logo.png"
+                alt="Cookie Corner logo"
+                class="logo"
+            >
+        </a>
+
+        <nav class="site-navigation" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Share, bake, and discover</p>
+
+                <h1>Welcome to Cookie Corner!</h1>
+
+                <p>
+                    Find your next favorite cookie recipe, discover new
+                    flavors, and enjoy browsing delicious homemade creations.
+                </p>
+
+                <a href="recipes.html" class="button">
+                    Browse Recipes
+                </a>
+            </div>
+
+            <img
+                src="images/cookie-baker.png"
+                alt="A baker holding a tray of freshly baked cookies"
+                class="hero-image"
+            >
+        </section>
+
+        <section class="featured-section">
+            <div class="section-heading">
+                <p class="eyebrow">Try something sweet</p>
+                <h2>Featured Recipe</h2>
+            </div>
+
+            <article class="recipe-card">
+                <img
+                    src="images/chocolate-chip-cookies.jpg"
+                    alt="Freshly baked chocolate chip cookies on a plate"
+                >
+
+                <div class="recipe-card-content">
+                    <h3>Classic Chocolate Chip Cookies</h3>
+
+                    <p>
+                        A simple and delicious cookie recipe that is perfect
+                        for sharing with family and friends.
+                    </p>
+
+                    <a href="recipes.html" class="button">
+                        View Recipes
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="explore-section">
+            <div class="section-heading">
+                <p class="eyebrow">Find your next favorite</p>
+                <h2>Explore Cookie Corner</h2>
+            </div>
+
+            <div class="explore-grid">
+                <article class="explore-card">
+                    <img
+                        src="images/recipe-preview.jpg"
+                        alt="A variety of homemade cookies"
+                        loading="lazy"
+                    >
+
+                    <h3>Find Recipes</h3>
+
+                    <p>
+                        Discover homemade cookie recipes for every occasion.
+                    </p>
+
+                    <a href="recipes.html" class="text-link">
+                        Explore recipes
+                    </a>
+                </article>
+
+                <article class="explore-card">
+                    <img
+                        src="images/gallery-preview.jpg"
+                        alt="Several decorated cookies"
+                        loading="lazy"
+                    >
+
+                    <h3>Browse the Gallery</h3>
+
+                    <p>
+                        Look through delicious pictures of cookies and get
+                        inspired to bake.
+                    </p>
+
+                    <a href="gallery.html" class="text-link">
+                        View the gallery
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="sharing-section">
+            <h2>Have a Favorite Recipe?</h2>
+
+            <p>
+                Share your favorite homemade cookie recipe with the Cookie
+                Corner community.
+            </p>
+
+            <a href="recipes.html" class="button">
+                Share a Recipe
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Cookie Corner. All rights reserved.</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </footer>
 </body>
 </html>
